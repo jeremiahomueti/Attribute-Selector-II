@@ -1,0 +1,63 @@
+Continuation of the attribute selector which helps us select 
+elements based on a specified or specific attribute.
+
+input[type = "text"]
+{
+    width: 300px;
+    color: yellow;
+}
+
+
+
+input[type = "password"]
+{
+    width: 300px;
+    color: yellow;
+}
+
+Besides "input", we could specify by id or class.
+
+So any section, where the class is "post"...
+
+section[class="post"]
+{
+    width: 300px;
+    color: yellow;
+}
+
+It'll be much better to just do this:
+
+
+.post{
+    width: 300px;
+    color: yellow;
+}
+
+...but it's good to know you can do the above in line 22.
+
+**************************************************************
+
+It's possible to say any anchor tag containing keyword "google"
+should have the color magenta.
+
+a[href*="google"]
+{
+    color: magenta;
+}
+
+
+The *= sign specifies the desired keyword attribute to 
+target or hook by.
+
+
+We could also do:
+
+a[href $= ".org"]
+{
+    color: magenta; //this means the href has to end in .org
+}
+
+the latter is not for hrefs only. We can do it in such a way 
+that any input that contains the first initial 'P' or 'J'
+
+THERE ARE MORE ON THIS ON MDN.😊
